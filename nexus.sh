@@ -87,7 +87,7 @@ User=$USER
 WorkingDirectory=$HOME/network-api/clients/cli
 Environment=NONINTERACTIVE=1
 ExecStart=$HOME/.cargo/bin/cargo run --release --bin prover -- beta.orchestrator.nexus.xyz
-Restart=on-failure
+Restart=always
 RestartSec=10
 
 [Install]
